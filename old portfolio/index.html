@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tab.css">
+    <link rel="stylesheet" href="phone.css">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <div class="preloader">
+        <img src="images/loading-gif.gif" height="100px" width="100px">
+    </div>
+    <div class="container" id="home">
+        <nav id="navbar">
+            <div class="nav-center">
+                <div class="logo">
+
+                    <img src="images/logo2.png">
+
+                    <button class="nav-toggle">
+                        <img src="images/bars-solid.svg">
+                    </button>
+                </div>
+
+                <div class="nav-container" id="nav-containers">
+                    <ul id="nav-container">
+                        <a class="scroll-link" href="#home">
+                            <li>Home</li>
+                        </a>
+                        <a class="scroll-link" href="#bio-sec">
+                            <li>About</li>
+                        </a>
+                        <a class="scroll-link" href="#my-service">
+                            <li>Services</li>
+                        </a>
+                        <a class="scroll-link" href="#my-port">
+                            <li>Portfolio</li>
+                        </a>
+                        <a class="scroll-link" href="#my-form">
+                            <li>Conatact</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="section home-section">
+            <div class="info-container">
+                <div class="border"></div>
+                <div class="my-info">
+                    <div class="hello">
+                        <h2>THIS IS ME</h2>
+                    </div>
+                    <div class="name">
+                        <h2>PRADIP DAS</h2>
+                    </div>
+                    <div class="more-about">
+                        Hello, i'm pradip Das. Web Developer, designer, youtuber and freeLancer. Welcome to my
+                        website.
+                    </div>
+                    <div class="info-button">
+                      <a href="images/Pradip's Resume.pdf" target="_blank">  <button class="hero-btn" id="info-btn">Hire Me</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="intro-image">
+                <div class="intro-img-box">
+                    <img src="img5.jpeg">
+                </div>
+            </div>
+        </section>
+
+
+        <div class="bio-header">
+            <h2>My Bio-Data</h2>
+        </div>
+        <section class="bio-section" id="bio-sec">
+            <div class="intro-image bio-image">
+                <div class="my-review cards" id="review-box">
+                    <!-- <div class="title"> -->
+                    <article class="review cards card-left" id="article-review">
+                        <h2>About Me</h2>
+                        <div class="underline"></div>
+                        <!-- </div> -->
+
+                        <!-- review  -->
+                        <div class="img-container">
+                            <img src="" id="person-img" alt="">
+                        </div>
+
+                        <p id="job">ux designer</p>
+                        <p id="info">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quibusdam eos in vero deserunt
+                            sapiente nulla. Nemo dolore unde, eos id soluta earum possimus?
+                        </p>
+                        <!-- prev-next button  -->
+                        <div class="button-container">
+                            <button class="prev-btn">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="next-btn">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <!-- <button class="random-btn">suprise me</button> -->
+                    </article>
+                </div>
+            </div>
+            <div class="bio-data info-container cards" id="bio-data">
+
+                <div class="skill ">
+                    <h4>Design</h4>
+                    <progress class="file" max="100" value="45">70%</progress>
+                </div>
+                <div class="skill">
+                    <h4>HTML</h4>
+                    <progress class="file" max="100" value="90">70%</progress>
+                </div>
+                <div class="skill">
+                    <h4>CSS</h4>
+                    <progress class="file" max="100" value="95">70%</progress>
+                </div>
+                <div class="skill">
+                    <h4>JavaScript</h4>
+                    <progress class="file" max="100" value="80">80%</progress>
+                </div>
+                <div class="skill">
+                    <h4>React</h4>
+                    <progress class="file" max="100" value="70">75%</progress>
+                </div>
+                <div class="skill">
+                    <h4>NodeJS/ExpressJs</h4>
+                    <progress class="file" max="100" value="50">60%</progress>
+                </div>
+                <div class="skill">
+                    <h4>MongoDb</h4>
+                    <progress class="file" max="100" value="50">60%</progress>
+                </div>
+                <a href="images/Pradip's Resume.pdf" target="_blank"><button class="pb">Download CV</button></a>
+            </div>
+            <img id="pnglogo-1" src="images/html5.png"><img id="pnglogo-2" src="images/css3.png"><img id="pnglogo-3"
+                src="images/js.png"><img id="pnglogo-4" src="mongodb_original_logo_icon_146424.png"><img id="pnglogo-5"
+                src="images/react.png"><img id="pnglogo-6" src="nodejs-1-logo-png-transparent.png">
+        </section>
+        <section class="port" id="my-port">
+            <div class="service-header port-header">
+                <h2>Recent works</h2>
+                <p>
+                    This experience has been nothing short of exhilarating, as it allowed me to explore the realm of web development. JavaScript is &#10084
+                </p>
+            </div>
+            <div class="port-main">
+                <div class="port-button">
+                    <a href="https://voyagerdictionary.netlify.app/" target="_blank" rel="noopener noreferrer"><button class="pb">Dictionary</button></a>
+                    <a href="https://colorflipperhex.netlify.app" target="_blank" rel="noopener noreferrer"><button class="pb">Colours</button></a>
+                    <a href="https://voyagerwordgame.netlify.app/" target="_blank" rel="noopener noreferrer"><button class="pb">GuessWord Game</button></a>
+                </div>
+                <div class="port-container">
+                    <div class="port-content"><a href="voyagermainquizapp.netlify.app" target="_blank"
+                            rel="noopener noreferrer"><img src="images/quiz.jpg" class="port-img"></a>Quiz App</div>
+                    <div class="port-content"><a href="https://cropimgvoyager.netlify.app" target="_blank"
+                            rel="noopener noreferrer"><img src="images/crop.jpg" class="port-img"></a>Image Croper</div>
+                    <div class="port-content"><a href="https://voyagersgallery.netlify.app" target="_blank"
+                            rel="noopener noreferrer"><img src="images/gallery.jpg" class="port-img"></a>Gallery App
+                        </div>
+                        <div class="port-content"><a href="https://voyagersnews.netlify.app/" target="_blank"
+                            rel="noopener noreferrer"><img src="images/news.jpg" class="port-img"></a>News Blog</div>
+                            <div class="port-content"><a href="https://voyagertodoapp.netlify.app/" target="_blank"
+                                    rel="noopener noreferrer"><img src="images/todo.jpg" class="port-img"></a>Todo App</div>
+                    <div class="port-content"><a href="https://myprojectaug29.netlify.app" target="_blank"
+                            rel="noopener noreferrer"><img src="abc.jpg" class="port-img"></a>Web Hosting
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="my-service">
+            <div class="service-header">
+                <h2>About Services</h2>
+                <p>
+                    The web does not just connect machines, it connects people
+                </p>
+            </div>
+            <div class="service-main">
+                <div class="service-table">
+                    <a href="https://voyagerfoodmenu.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <div class="service-content cards">
+                            <div class="service-logo-img">
+                                <img src="images/service1.png">
+                            </div>
+                            <div class="service-content-h4">
+                                <h4>React App</h4>
+                            </div>
+                            <div id="service-para">
+                                <p>'Great web design without functionality is like a sports car with no engine'
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://5ocial.netlify.app" target="_blank" rel="noopener noreferrer">
+                        <div class="service-content cards ">
+                            <div class="service-logo-img">
+                                <img src="images/service2.png">
+                            </div>
+                            <div class="service-content-h4">
+                                <h4>Social Media App</h4>
+                            </div>
+                            <div id="service-para">
+                                <p>'Social media is not a monologue, it's a two-way conversation'
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://voyagertictactoe.netlify.app" target="_blank" rel="noopener noreferrer">
+                            <div class="service-content cards card-right">
+                            <div class="service-logo-img">
+                                <img src="images/service3.png">
+                            </div>
+                            <div class="service-content-h4">
+                                <h4>Tic Tac Toe</h4>
+                            </div>
+                            <div id="service-para">
+                                <p>'Love is a game of tic-tac-toe,constantly waiting for the next x or 0'
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="https://mybtdcountdown.netlify.app" target="_blank" rel="noopener noreferrer">
+                            <div class="service-content cards">
+                            <div class="service-logo-img">
+                                <img src="images/service4.png">
+                            </div>
+                            <div class="service-content-h4">
+                                <h4>Countdown</h4>
+                            </div>
+                            <div id="service-para">
+                                <p>'The bad news is time flies and good news is you are the pilot'
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://voyagerscalculator.netlify.app" target="_blank" rel="noopener noreferrer">
+                            <div class="service-content">
+                            <div class="service-logo-img">
+                                <img src="images/service5.png">
+                            </div>
+                            <div class="service-content-h4">
+                                <h4>Calculator</h4>
+                            </div>
+                            <div id="service-para">
+                                <p>'Nothing can subtract hard work from success,only add to it'
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://voyagerreviewapp.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            <div class="service-content card-right cards">
+                            <div class="service-logo-img">
+                                <img src="images/service6.png">
+                            </div>
+                            <div class="service-content-h4">
+                                <h4>Review</h4>
+                            </div>
+                            <div id="service-para">
+                                <p>'A good, sympathetic review is always a wonderful surprise'
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="service-bar">
+            <div class="bar-margin">
+                <div class="bar-item">
+                    <div class="ser-pro-num project" data-target="120">+</div>
+                    <div class="service-provided">Project Completed</div>
+                </div>
+                <div class="bar-item">
+                    <div class="ser-pro-num" data-target="32">+</div>
+                    <div class="service-provided">Happy Client</div>
+                </div>
+                <div class="bar-item">
+                    <div class="ser-pro-num" data-target="500">+</div>
+                    <div class="service-provided">Coffee</div>
+                </div>
+                <div class="bar-item">
+                    <div class="ser-pro-num subcriber" data-target="1000">+</div>
+                    <div class="service-provided">Subscriber</div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="form" id="my-form">
+            <div class="contact-form">
+                <h2>Have some questions</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="clientName" class="form-label">Name</label>
+                        <input type="name" class="form-control" id="clientName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="clientEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="clientEmail" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We will never share your Email and phone with anyone else
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="clientPhone" class="form-label">Phone</label>
+                        <input type="phone" class="form-control" id="clientPhone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="clientPhone" class="form-label">Enquiry</label>
+                        <input type="text" class="form-control" id="clientPhone">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="isClient"><br>
+                        <label for="isClient" class="isClient1">I want to work on a project with you</label><br>
+                    </div>
+                    <button type="submit" class="submit-button btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="my-location">
+                <div class="my-location-box">
+                    <div class="location-header">
+                        <h2 class="location-h2">
+                            Feel free to contact
+                        </h2>
+                        <p class="location-para">
+                            Hello Everyone! Have a great day I am here to help you. If you want to know something or you
+                            have any suggestion then please mail me. Thank You.
+                        </p>
+                    </div>
+                    <div class="location-main">
+                        <div class="location-row">
+                            <div class="location-img"><img src="images/location-dot-solid.svg" alt=""></div>
+                            <div class="location-row-info">Vijaynagar,Bangalore</div>
+                        </div>
+                        <div class="location-row">
+                            <div class="location-img"><img src="images/envelope-solid.svg" alt=""></div>
+                            <div class="location-row-info">pradipdasrmcf@gmail.com</div>
+                        </div>
+                        <div class="location-row">
+                            <div class="location-img"><img src="images/phone-solid.svg" alt=""></div>
+                            <div class="location-row-info">6000452435</div>
+                        </div>
+                        <div class="location-row">
+                            <div class="location-img"><img src="images/globe-solid.svg" alt=""></div>
+                            <div class="location-row-info">www.voyager.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="footer-center">
+                <div class="footer-content">
+                    <div class="footer-logo"><img src="images/logo2.png" alt=""></div>
+                    <div><span id="footer-span"></span></div>
+                    <p class="footer-text">Copyright &copy 2023 Voyager.com</p>
+                </div>
+                <div class="footer-logo-link">
+                    <div class="footer-img">
+                        <a href="https://www.facebook.com/pradipdas111?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer"><img src="images/facebook-f.svg" alt=""></a>
+                    </div>
+
+                    <div class="footer-img">
+                        <a href="https://www.instagram.com/pradeep_das____/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/instagram.svg" alt=""></a>
+                    </div>
+                    <div class="footer-img">
+                        <a href="https://www.instagram.com/pradeep_das____/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/telegram.svg" alt=""></a>
+                    </div>
+                    <div class="footer-img">
+                        <a href="https://www.linkedin.com/in/pradip-das-4a87a111a/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/linkedin.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a href="#home" class="scroll-link top-link"><img src="images/arrow-up-solid.svg" height="15px"></a>
+    </div>
+    <script src="app.js"></script>
+      <script src="particles.js"></script>
+  <script src="app2.js"></script>
+</body>
+</html>

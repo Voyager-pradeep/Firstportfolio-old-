@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .counter {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 200px;
+        opacity: 0; /* Initially hidden */
+        transition: opacity 0.5s ease;
+      }
+
+      .content {
+        height: 200vh; /* Make content element taller for scrolling */
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="counter" id="counter">0</div>
+
+    <div class="content" id="content">
+      <p>Scroll down to see the counting animation.</p>
+    </div>
+    <script>
+      const counter = document.getElementById("counter");
+      const content = document.getElementById("content");
+
+      const options = {
+        threshold: 0.5, // Trigger when 50% of the element is in the viewport
+      };
+
+      let countingStarted = false;
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !countingStarted) {
+            // Start the counting animation
+            startCounting();
+            countingStarted = true; // Set a flag to prevent multiple starts
+          }
+        });
+      }, options);
+
+      observer.observe(content);
+
+      function startCounting() {
+        let count = 0;
+        const targetNumber = 1000; // Change this to your desired final number
+        const duration = 2000; // Animation duration in milliseconds
+        const increment = (targetNumber / duration) * 10;
+
+        const interval = setInterval(() => {
+          count += increment;
+          counter.textContent = Math.min(Math.round(count), targetNumber);
+
+          if (count >= targetNumber) {
+            clearInterval(interval);
+          }
+        }, 10);
+
+        // Fade in the counter element
+        counter.style.opacity = 1;
+      }
+    </script>
+  </body>
+</html>
